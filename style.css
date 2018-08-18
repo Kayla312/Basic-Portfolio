@@ -15,6 +15,26 @@ body {
     margin: 0 auto;
     clear: both;
 }
+h1, h2, h3, p,{
+    margin-bottom: 20px;
+}
+p:last-child{
+    margin-bottom: 0;
+}
+h1, h2, h3 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: #4aaaa5;
+}
+h1 {
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 20px;
+}
+h2, h3 {
+    font-size: 22px;
+}
 /* on all things declared container-take up whole width of page, margins (none) and auto center -- clear both is to avoid the movement from and inevetable 'float' element*/
 #profilehead {
     background: #fff;
@@ -23,7 +43,7 @@ body {
     color: #fff;
     overflow: auto;
     border-bottom: 2px solid #ccc;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
 }
 
@@ -50,7 +70,7 @@ nav a {
     text-decoration:none;
     margin-left: 15px;
     display: inline-block;
-    /* throws everything into shape but 'creates chaos */
+    /* throws everything into shape but 'creates chaos' makes the boxes no longer stack */
     border-left: 1px solid #efefef;
     padding-left: 15px;
     line-height: 18px;
